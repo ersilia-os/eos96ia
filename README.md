@@ -1,2 +1,2 @@
-# eos-template
-Template repository to add new models to the Ersilia Model Hub
+# eso96ia
+CYP3A4 inhibition with explainable AI.
