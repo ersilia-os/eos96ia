@@ -143,7 +143,7 @@ def mol_to_dgl(mol):
         atom_features.append(atom_feat)
 
     for bond in mol.GetBonds():
-        g.add_edge(bond.GetBeginAtomIdx(), bond.GetEndAtomIdx())
+        g.add_edges(bond.GetBeginAtomIdx(), bond.GetEndAtomIdx())
 
     g.ndata["feat"] = torch.FloatTensor(atom_features)
 
