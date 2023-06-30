@@ -7,7 +7,7 @@ sys.path.append(os.path.join(ROOT, "molgrad"))
 
 infile = sys.argv[1]
 outfile = sys.argv[2]
-checkpoints_dir = sys.argv[3]
+checkpoints_dir = os.path.join(ROOT,  "..", "..", "checkpoints")
 
 import torch
 from molgrad.net import MPNNPredictor
@@ -26,6 +26,11 @@ with open(infile, "r") as f:
         mols += [Chem.MolToInchi(Chem.MolFromSmiles(r[0]))]
 
 preds = predict(mols, model_pt, output_f=torch.sigmoid, progress=True)[:,0]
+
+#check input and output have the same length
+input_len = len(mols)
+output_len = len(mols)
+assert input_len == output_len
 
 with open(outfile, "w") as f:
     writer = csv.writer(f)
