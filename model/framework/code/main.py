@@ -34,6 +34,6 @@ assert input_len == output_len
 
 with open(outfile, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["probability"])
+    writer.writerow(["cyp3a4_proba"])
     for p in preds:
         writer.writerow([float(p)])
