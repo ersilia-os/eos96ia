@@ -41,9 +41,13 @@
     "Incorporation Date": "2021-10-19",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos96ia.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos96ia",
-    "Docker Architecture": [
-        "AMD64"
-    ],
+    "Docker Architecture": "AMD64",
     "Model Size": 17.0,
-    "Environment Size": 2418.0
+    "Environment Size": 2418.0,
+    "Image Size": 2379.39,
+    "Computational Performance 1": 33.56,
+    "Computational Performance 2": 23.88,
+    "Computational Performance 3": 29.06,
+    "Computational Performance 4": 176.27,
+    "Computational Performance 5": 784.38
 }
