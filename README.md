@@ -2,7 +2,7 @@
 
 By combining a Message-Passing Graph Neural Network (MPGNN) and a Forward fully connected Neural Network (FNN) with an integrated gradients explainable artificial intelligence (XAI) method, the authors developed MolGrad and tested it on a number of ADME predictive tasks. MolGrad incorporates explainable features to facilitate interpretation of the predictions.  This model has been trained using a ChEMBL dataset of CYP450 3A4 inhibitors (0) and non-inhibitors (1).
 
-This model was incorporated on 2021-10-18.
+This model was incorporated on 2021-10-19.
 
 ## Information
 ### Identifiers
@@ -39,6 +39,8 @@ Below are the **Output Columns** of the model:
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos96ia.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos96ia.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `17`
+- **Environment Size (Mb):** `2418`
 
 
 ### References
