@@ -39,15 +39,17 @@
     "License": "AGPL-3.0-only",
     "Contributor": "miquelduranfrigola",
     "Incorporation Date": "2021-10-19",
+    "Last Packaging Date": "2025-10-10",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos96ia.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos96ia",
     "Docker Architecture": "AMD64",
     "Model Size": 17.0,
     "Environment Size": 2432.0,
-    "Image Size": 2379.39,
-    "Computational Performance 1": 33.56,
-    "Computational Performance 2": 23.88,
-    "Computational Performance 3": 29.06,
-    "Computational Performance 4": 176.27,
-    "Computational Performance 5": 784.38
+    "Image Size": 2396.59,
+    "Computational Performance 1": 28.78,
+    "Computational Performance 2": 18.72,
+    "Computational Performance 3": 20.41,
+    "Computational Performance 4": 120.94,
+    "Computational Performance 5": 622.29
 }
