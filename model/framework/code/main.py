@@ -21,19 +21,20 @@ from molgrad.prod import predict
 with open(infile, "r") as f:
     reader = csv.reader(f)
     next(reader)
-    mols = []
-    for r in reader:
-        mols += [Chem.MolToInchi(Chem.MolFromSmiles(r[0]))]
+    mols = [Chem.MolToInchi(Chem.MolFromSmiles(r[0])) for r in reader]
 
-preds = predict(mols, model_pt, output_f=torch.sigmoid, progress=True)[:,0]
+valid_idx = [i for i, m in enumerate(mols) if m is not None]
+valid_mols = [mols[i] for i in valid_idx]
+preds_valid = predict(valid_mols, model_pt, output_f=torch.sigmoid, progress=True)[:,0]
 
-#check input and output have the same length
-input_len = len(mols)
-output_len = len(mols)
-assert input_len == output_len
+results = [float("nan")] * len(mols)
+for i, p in zip(valid_idx, preds_valid):
+    results[i] = float(p)
+
+assert len(results) == len(mols)
 
 with open(outfile, "w") as f:
     writer = csv.writer(f)
     writer.writerow(["cyp3a4_proba"])
-    for p in preds:
-        writer.writerow([float(p)])
+    for p in results:
+        writer.writerow([p])
