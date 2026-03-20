@@ -2,7 +2,7 @@
 
 By combining a Message-Passing Graph Neural Network (MPGNN) and a Forward fully connected Neural Network (FNN) with an integrated gradients explainable artificial intelligence (XAI) method, the authors developed MolGrad and tested it on a number of ADME predictive tasks. MolGrad incorporates explainable features to facilitate interpretation of the predictions.  This model has been trained using a ChEMBL dataset of CYP450 3A4 inhibitors (0) and non-inhibitors (1).
 
-This model was incorporated on 2021-10-19.Last packaged on 2025-10-10.
+This model was incorporated on 2021-10-19.Last packaged on 2026-03-20.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `17`
 - **Environment Size (Mb):** `2415`
-- **Image Size (Mb):** `2396.59`
+- **Image Size (Mb):** `2399.22`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.78`
-- 100 inputs: `20.41`
-- 10000 inputs: `622.29`
+- 10 inputs: `30.2`
+- 100 inputs: `22.04`
+- 10000 inputs: `222.14`
 
 ### References
 - **Source Code**: [https://github.com/josejimenezluna/molgrad/](https://github.com/josejimenezluna/molgrad/)
