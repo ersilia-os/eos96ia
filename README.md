@@ -1,6 +1,6 @@
 # Coloring molecules for interaction with CYP3A4
 
-By combining a Message-Passing Graph Neural Network (MPGNN) and a Forward fully connected Neural Network (FNN) with an integrated gradients explainable artificial intelligence (XAI) method, the authors developed MolGrad and tested it on a number of ADME predictive tasks. MolGrad incorporates explainable features to facilitate interpretation of the predictions.  This model has been trained using a ChEMBL dataset of CYP450 3A4 inhibitors (0) and non-inhibitors (1).
+Flags inhibition of cytochrome P450 3A4, an enzyme central to drug clearance and a frequent source of drug-drug interactions. The model shares its architecture with the other MolGrad endpoints, pairing a message-passing graph neural network with integrated-gradients colouring of atomic contributions, and learns from 9,120 compounds characterised in a bioluminescent high-throughput assay. One caveat carries over from that dataset: substrates were never labelled separately from inhibitors and could not be excluded from the positives.
 
 This model was incorporated on 2021-10-19.Last packaged on 2026-03-20.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2021-10-19.Last packaged on 2026-03-20.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that the molecule is metabolized by Cyp3A4 (cut-off: 10 uM)
+- **Interpretation:** Probability that the compound inhibits cytochrome P450 3A4, from a binary high-throughput assay.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
