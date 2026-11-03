@@ -3,7 +3,7 @@
 Flags inhibition of cytochrome P450 3A4, an enzyme central to drug clearance and a frequent source of drug-drug interactions. The model shares its architecture with the other MolGrad endpoints, pairing a message-passing graph neural network with integrated-gradients colouring of atomic contributions, and learns from 9,120 compounds characterised in a bioluminescent high-throughput assay. One caveat carries over from that dataset: substrates were never labelled separately from inhibitors and could not be excluded from the positives.
 
 This model was incorporated on 2021-10-19.
-Last packaged on 2026-03-20.
+Last packaged on 2026-11-03.
 
 ## Information
 ### Identifiers
@@ -41,13 +41,13 @@ Below are the **Output Columns** of the model:
 
 ### Resource Consumption
 - **Model Size (Mb):** `17`
-- **Environment Size (Mb):** `2415`
-- **Image Size (Mb):** `2399.22`
+- **Environment Size (Mb):** `2414`
+- **Image Size (Mb):** `2330.44`
 
 **Computational Performance (seconds):**
-- 10 inputs: `30.2`
-- 100 inputs: `22.04`
-- 10000 inputs: `222.14`
+- 10 inputs: `24.66`
+- 100 inputs: `16.42`
+- 10000 inputs: `183.22`
 
 ### References
 - **Source Code**: [https://github.com/josejimenezluna/molgrad/](https://github.com/josejimenezluna/molgrad/)
