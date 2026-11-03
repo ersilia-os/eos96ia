@@ -2,7 +2,8 @@
 
 Flags inhibition of cytochrome P450 3A4, an enzyme central to drug clearance and a frequent source of drug-drug interactions. The model shares its architecture with the other MolGrad endpoints, pairing a message-passing graph neural network with integrated-gradients colouring of atomic contributions, and learns from 9,120 compounds characterised in a bioluminescent high-throughput assay. One caveat carries over from that dataset: substrates were never labelled separately from inhibitors and could not be excluded from the positives.
 
-This model was incorporated on 2021-10-19.Last packaged on 2026-03-20.
+This model was incorporated on 2021-10-19.
+Last packaged on 2026-03-20.
 
 ## Information
 ### Identifiers
